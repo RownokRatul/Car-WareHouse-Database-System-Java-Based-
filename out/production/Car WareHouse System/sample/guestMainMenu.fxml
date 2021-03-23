@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.guestMainMenuController">
+    <children>
+        <TitledPane animated="false" layoutX="2.0" layoutY="-2.0" prefHeight="400.0" prefWidth="593.0" text="Main Menu">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="viewCarsButton" layoutX="193.0" layoutY="93.0" mnemonicParsing="false" onAction="#viewCar" prefHeight="30.0" prefWidth="206.0" text="View All Cars">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="searchByRegButton" layoutX="193.0" layoutY="138.0" mnemonicParsing="false" onAction="#searchByRegistration" prefHeight="30.0" prefWidth="206.0" text="Search By Registration">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="buyCarButton" layoutX="193.0" layoutY="235.0" mnemonicParsing="false" onAction="#buyCar" prefHeight="30.0" prefWidth="206.0" text="Buy A Car">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="searchByMakeModelButton" layoutX="193.0" layoutY="187.0" mnemonicParsing="false" onAction="#searchByMakeModel" prefHeight="30.0" prefWidth="206.0" text="Search By Make Model">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="128.0" layoutY="26.0" prefHeight="37.0" prefWidth="326.0" text="Logged In AS : GUEST">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="guestImageAvatar" fitHeight="56.0" fitWidth="66.0" layoutX="42.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>
